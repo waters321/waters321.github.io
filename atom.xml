@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>waters321</title>
+  
+  <subtitle>学无止境，顺势而为</subtitle>
+  <link href="https://waters321.com/atom.xml" rel="self"/>
+  
+  <link href="https://waters321.com/"/>
+  <updated>2021-05-10T08:55:44.716Z</updated>
+  <id>https://waters321.com/</id>
+  
+  <author>
+    <name>waters321</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://waters321.com/2021/05/10/hello-world/"/>
+    <id>https://waters321.com/2021/05/10/hello-world/</id>
+    <published>2021-05-10T08:55:44.716Z</published>
+    <updated>2021-05-10T08:55:44.716Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://waters321.com/2021/05/08/test/"/>
+    <id>https://waters321.com/2021/05/08/test/</id>
+    <published>2021-05-08T21:35:25.000Z</published>
+    <updated>2021-05-10T08:55:44.716Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>主题备选</title>
+    <link href="https://waters321.com/2021/05/08/yuque/zhu-ti-bei-xuan/"/>
+    <id>https://waters321.com/2021/05/08/yuque/zhu-ti-bei-xuan/</id>
+    <published>2021-05-08T05:35:59.000Z</published>
+    <updated>2021-05-10T08:55:44.716Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hive</title>
+    <link href="https://waters321.com/2021/05/07/yuque/hive/"/>
+    <id>https://waters321.com/2021/05/07/yuque/hive/</id>
+    <published>2021-05-07T07:31:18.000Z</published>
+    <updated>2021-05-10T08:55:44.716Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;wget &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hadoop v3</title>
+    <link href="https://waters321.com/2021/05/07/yuque/hadoop-v3/"/>
+    <id>https://waters321.com/2021/05/07/yuque/hadoop-v3/</id>
+    <published>2021-05-07T03:37:36.000Z</published>
+    <updated>2021-05-10T08:55:44.716Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;wget &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ververica/ververica-platform</title>
+    <link href="https://waters321.com/2021/04/29/yuque/ververica-ververica-platform/"/>
+    <id>https://waters321.com/2021/04/29/yuque/ververica-ververica-platform/</id>
+    <published>2021-04-29T08:31:01.000Z</published>
+    <updated>2021-05-10T08:55:44.716Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;需要是 helm3 才行。&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
