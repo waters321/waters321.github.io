@@ -6,7 +6,7 @@
   <link href="https://waters321.com/atom.xml" rel="self"/>
   
   <link href="https://waters321.com/"/>
-  <updated>2021-05-14T11:14:06.640Z</updated>
+  <updated>2021-05-14T11:30:45.586Z</updated>
   <id>https://waters321.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://waters321.com/2021/05/14/hello-world/"/>
-    <id>https://waters321.com/2021/05/14/hello-world/</id>
-    <published>2021-05-14T11:14:06.640Z</published>
-    <updated>2021-05-14T11:14:06.640Z</updated>
+    <link href="https://waters321.com/posts/4a17b156.html"/>
+    <id>https://waters321.com/posts/4a17b156.html</id>
+    <published>2021-05-14T11:30:45.586Z</published>
+    <updated>2021-05-14T11:30:45.586Z</updated>
     
     
       
@@ -39,10 +39,10 @@
   
   <entry>
     <title>test</title>
-    <link href="https://waters321.com/2021/05/08/test/"/>
-    <id>https://waters321.com/2021/05/08/test/</id>
+    <link href="https://waters321.com/posts/d87f7e0c.html"/>
+    <id>https://waters321.com/posts/d87f7e0c.html</id>
     <published>2021-05-08T21:35:25.000Z</published>
-    <updated>2021-05-14T11:14:06.640Z</updated>
+    <updated>2021-05-14T11:30:45.586Z</updated>
     
     
     
@@ -52,10 +52,10 @@
   
   <entry>
     <title>主题备选</title>
-    <link href="https://waters321.com/2021/05/08/yuque/zhu-ti-bei-xuan/"/>
-    <id>https://waters321.com/2021/05/08/yuque/zhu-ti-bei-xuan/</id>
+    <link href="https://waters321.com/posts/bbb68bef.html"/>
+    <id>https://waters321.com/posts/bbb68bef.html</id>
     <published>2021-05-08T05:35:59.000Z</published>
-    <updated>2021-05-14T11:14:06.640Z</updated>
+    <updated>2021-05-14T11:30:45.586Z</updated>
     
     
       
@@ -73,10 +73,10 @@
   
   <entry>
     <title>hive</title>
-    <link href="https://waters321.com/2021/05/07/yuque/hive/"/>
-    <id>https://waters321.com/2021/05/07/yuque/hive/</id>
+    <link href="https://waters321.com/posts/dc6dbbf8.html"/>
+    <id>https://waters321.com/posts/dc6dbbf8.html</id>
     <published>2021-05-07T07:31:18.000Z</published>
-    <updated>2021-05-14T11:14:06.640Z</updated>
+    <updated>2021-05-14T11:30:45.586Z</updated>
     
     
       
@@ -94,10 +94,10 @@
   
   <entry>
     <title>hadoop v3</title>
-    <link href="https://waters321.com/2021/05/07/yuque/hadoop-v3/"/>
-    <id>https://waters321.com/2021/05/07/yuque/hadoop-v3/</id>
+    <link href="https://waters321.com/posts/150dfbc8.html"/>
+    <id>https://waters321.com/posts/150dfbc8.html</id>
     <published>2021-05-07T03:37:36.000Z</published>
-    <updated>2021-05-14T11:14:06.640Z</updated>
+    <updated>2021-05-14T11:30:45.586Z</updated>
     
     
       
@@ -115,10 +115,10 @@
   
   <entry>
     <title>ververica/ververica-platform</title>
-    <link href="https://waters321.com/2021/04/29/yuque/ververica-ververica-platform/"/>
-    <id>https://waters321.com/2021/04/29/yuque/ververica-ververica-platform/</id>
+    <link href="https://waters321.com/posts/9bd49529.html"/>
+    <id>https://waters321.com/posts/9bd49529.html</id>
     <published>2021-04-29T08:31:01.000Z</published>
-    <updated>2021-05-14T11:14:06.640Z</updated>
+    <updated>2021-05-14T11:30:45.586Z</updated>
     
     
       
