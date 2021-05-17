@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, waters321">
+    <meta name="keywords" content="xxl-job本地开发环境调用, waters321">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test | waters321</title>
+    <title>xxl-job本地开发环境调用 | waters321</title>
     <link rel="icon" type="image/png" href="/medias/logo/waters321-ico.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -230,12 +230,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">xxl-job本地开发环境调用</h1>
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-08
+                    2021-05-17
                 </div>
                 
 
@@ -372,7 +372,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    250
                 </div>
                 
 
@@ -402,7 +402,55 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p><a target="_blank" rel="noopener" href="https://www.xuxueli.com/xxl-job/#6.2%20%E6%89%A7%E8%A1%8C%E5%99%A8%20RESTful%20API">https://www.xuxueli.com/xxl-job/#6.2%20%E6%89%A7%E8%A1%8C%E5%99%A8%20RESTful%20API</a><br><a target="_blank" rel="noopener" href="https://www.xuxueli.com/xxl-job/#c%E3%80%81%E8%A7%A6%E5%8F%91%E4%BB%BB%E5%8A%A1">https://www.xuxueli.com/xxl-job/#c%E3%80%81%E8%A7%A6%E5%8F%91%E4%BB%BB%E5%8A%A1</a></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@RestController</span>
+<span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/test"</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Profile</span><span class="token punctuation">(</span><span class="token string">"develop"</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Slf4j</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestController</span> <span class="token punctuation">{</span>
+
+  <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">"${xxl.job.executor.localAddress}"</span><span class="token punctuation">)</span>
+  <span class="token class-name">String</span> localAddress<span class="token punctuation">;</span>
+  <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">"${xxl.job.accessToken}"</span><span class="token punctuation">)</span>
+  <span class="token class-name">String</span> accessToken<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@ApiOperation</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"手动触发任务"</span><span class="token punctuation">)</span>
+  <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">"/run"</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"adminClientAddressUrl:{},accessToken:{}"</span><span class="token punctuation">,</span> localAddress<span class="token punctuation">,</span> accessToken<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">ExecutorBiz</span> executorBiz <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ExecutorBizClient</span><span class="token punctuation">(</span>localAddress<span class="token punctuation">,</span> accessToken<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">ReturnT</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> retval <span class="token operator">=</span> executorBiz<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token function">getTriggerParam</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"retval:{}"</span><span class="token punctuation">,</span> <span class="token class-name">JsonUtil</span><span class="token punctuation">.</span><span class="token function">obj2String</span><span class="token punctuation">(</span>retval<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 200 表示正常、其他失败</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>retval<span class="token punctuation">.</span><span class="token function">getCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">"success"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">"fail"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">private</span> <span class="token class-name">TriggerParam</span> <span class="token function">getTriggerParam</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">TriggerParam</span> triggerParam <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TriggerParam</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 任务标识</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setExecutorHandler</span><span class="token punctuation">(</span><span class="token string">"WxWorkUserChatDataJob"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 任务参数</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setExecutorParams</span><span class="token punctuation">(</span><span class="token string">"手动触发任务"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 任务阻塞策略，可选值参考 com.xxl.job.core.enums.ExecutorBlockStrategyEnum</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setExecutorBlockStrategy</span><span class="token punctuation">(</span><span class="token class-name">ExecutorBlockStrategyEnum</span><span class="token punctuation">.</span>COVER_EARLY<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 任务模式，可选值参考 com.xxl.job.core.glue.GlueTypeEnum</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setGlueType</span><span class="token punctuation">(</span><span class="token class-name">GlueTypeEnum</span><span class="token punctuation">.</span>BEAN<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// GLUE脚本代码</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setGlueSource</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// GLUE脚本更新时间，用于判定脚本是否变更以及是否需要刷新</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setGlueUpdatetime</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 本次调度日志ID</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setLogId</span><span class="token punctuation">(</span>triggerParam<span class="token punctuation">.</span><span class="token function">getJobId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 本次调度日志时间</span>
+    triggerParam<span class="token punctuation">.</span><span class="token function">setLogDateTime</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> triggerParam<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -428,7 +476,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://waters321.com/posts/d87f7e0c.htmlindex.html">https://waters321.com/posts/d87f7e0c.html</a>
+                    <a href="https://waters321.com/posts/86401e8b.htmlindex.html">https://waters321.com/posts/86401e8b.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -639,13 +687,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/456fb9b8.html">
+                <a href="/posts/4a17b156.html">
                     <div class="card-image">
                         
                         
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/15.jpg" class="responsive-img" alt="oss+cdn">
+                        <img src="/images/loading.gif" data-original="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">oss+cdn</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -656,7 +704,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
                         </span>
                         <span class="publish-author">
                             
@@ -676,13 +724,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/bbb68bef.html">
+                <a href="/posts/5152b423.html">
                     <div class="card-image">
                         
                         
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/15.jpg" class="responsive-img" alt="主题备选">
+                        <img src="/images/loading.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="xxl-job添加traceId">
                         
-                        <span class="card-title">主题备选</span>
+                        <span class="card-title">xxl-job添加traceId</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -693,7 +741,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
                             </span>
                         <span class="publish-author">
                             

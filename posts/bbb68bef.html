@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, waters321">
+    <meta name="keywords" content="主题备选, waters321">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test | waters321</title>
+    <title>主题备选 | waters321</title>
     <link rel="icon" type="image/png" href="/medias/logo/waters321-ico.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -230,12 +230,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">主题备选</h1>
                 </div>
             </div>
         </div>
@@ -372,7 +372,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    334
                 </div>
                 
 
@@ -402,7 +402,82 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zz_cheng/article/details/116329833">https://blog.csdn.net/zz_cheng/article/details/116329833</a><br>hexo-theme-melody<br><a target="_blank" rel="noopener" href="https://github.com/hongweifuture/hexo-theme-halo">https://github.com/hongweifuture/hexo-theme-halo</a><br><a target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html">https://sunhwee.com/posts/6e8839eb.html</a><br><a target="_blank" rel="noopener" href="https://lovelijunyi.gitee.io/posts/b8ec.html">https://lovelijunyi.gitee.io/posts/b8ec.html</a><br><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a><br><a target="_blank" rel="noopener" href="https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/">https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/</a></p>
+<p>Hexo：语雀云端写作，Github Actions 持续集成<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/z_johnny/article/details/104629805/">https://blog.csdn.net/z_johnny/article/details/104629805/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhwei.cn/github-actions-deploy-hexo-api/#toc-heading-7">https://www.zhwei.cn/github-actions-deploy-hexo-api/#toc-heading-7</a></p>
+<p>logo 设计<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20423593">https://www.zhihu.com/question/20423593</a></p>
+<p>真正的 log 设计<br><a target="_blank" rel="noopener" href="https://www.fotor.com.cn/app.html#/design/95c3c710-b1fd-11eb-9f66-2b4dc6c7b4ee/upload">https://www.fotor.com.cn/app.html#/design/95c3c710-b1fd-11eb-9f66-2b4dc6c7b4ee/</a>upload<br><a target="_blank" rel="noopener" href="https://www.pngtosvg.com/">https://www.pngtosvg.com/</a></p>
+<p>阿里云的函数计算</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
+
+<span class="token keyword">import</span> requests
+<span class="token keyword">import</span> logging
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> timedelta
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> timezone
+<span class="token keyword">import</span> json
+
+info <span class="token operator">=</span> <span class="token string">b'fail!\n'</span>
+
+
+<span class="token keyword">def</span> <span class="token function">handler</span><span class="token punctuation">(</span>environ<span class="token punctuation">,</span> start_response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        request_body_size <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>environ<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'CONTENT_LENGTH'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> <span class="token punctuation">(</span>ValueError<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        request_body_size <span class="token operator">=</span> <span class="token number">0</span>
+    request_body <span class="token operator">=</span> environ<span class="token punctuation">[</span><span class="token string">'wsgi.input'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span>request_body_size<span class="token punctuation">)</span>
+    title <span class="token operator">=</span> <span class="token string">""</span>
+    action_type <span class="token operator">=</span> <span class="token string">""</span>
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>request_body<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        body <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>request_body<span class="token punctuation">,</span>encoding <span class="token operator">=</span> <span class="token string">"utf-8"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        title <span class="token operator">=</span> body<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">]</span>
+        action_type <span class="token operator">=</span> body<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'action_type'</span><span class="token punctuation">]</span>
+
+    SHA_TZ <span class="token operator">=</span> timezone<span class="token punctuation">(</span>
+      timedelta<span class="token punctuation">(</span>hours<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      name<span class="token operator">=</span><span class="token string">'Asia/Shanghai'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    utc_now <span class="token operator">=</span> datetime<span class="token punctuation">.</span>utcnow<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span>tzinfo<span class="token operator">=</span>timezone<span class="token punctuation">.</span>utc<span class="token punctuation">)</span>
+    beijing_now <span class="token operator">=</span> utc_now<span class="token punctuation">.</span>astimezone<span class="token punctuation">(</span>SHA_TZ<span class="token punctuation">)</span>
+    now <span class="token operator">=</span> beijing_now<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">"%Y-%m-%d %H:%M:%S"</span><span class="token punctuation">)</span>
+
+    response <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span><span class="token string">"https://api.github.com/repos/waters321/waters321-blog/dispatches"</span><span class="token punctuation">,</span>
+    json <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"event_type"</span><span class="token punctuation">:</span> <span class="token string">"yuque_auto_build"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    headers <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'Accept'</span><span class="token punctuation">:</span> <span class="token string">'application/vnd.github.everest-preview+json'</span><span class="token punctuation">,</span>
+        <span class="token string">'Authorization'</span><span class="token punctuation">:</span> <span class="token string">'token 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'</span><span class="token punctuation">,</span>
+        <span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/json'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> response<span class="token punctuation">.</span>status_code <span class="token operator">==</span> <span class="token number">204</span><span class="token punctuation">:</span>
+        info <span class="token operator">=</span> <span class="token string">b'success!\n'</span>
+
+
+    response <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span><span class="token string">"http://wxpusher.zjiecode.com/api/send/message"</span><span class="token punctuation">,</span>
+    json <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">"appToken"</span><span class="token punctuation">:</span> <span class="token string">"AT_eSCPxuQTpSJDsYaQY8xL5r5XPdj22tvW"</span><span class="token punctuation">,</span>
+        <span class="token string">"content"</span><span class="token punctuation">:</span> now <span class="token operator">+</span> "
+语雀 to hexo 触发部署
+<span class="token string">" + title + "</span>
+<span class="token string">" + action_type + "</span>
+<span class="token string">" + str(info, encoding = "</span>utf<span class="token operator">-</span><span class="token number">8</span>"<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">"summary"</span><span class="token punctuation">:</span> now <span class="token operator">+</span> "
+语雀 to hexo 触发部署
+<span class="token string">" + title + "</span>     <span class="token string">" + action_type + "</span>
+<span class="token string">" + str(info, encoding = "</span>utf<span class="token operator">-</span><span class="token number">8</span>"<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">"contentType"</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token string">"uids"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"UID_ZBbeDhU30f0zikY3ILqRDxHcDjD8"</span>
+        <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    headers <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/json'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+    status <span class="token operator">=</span> <span class="token string">'200 OK'</span>
+    response_headers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token string">'Content-type'</span><span class="token punctuation">,</span> <span class="token string">'text/plain'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    start_response<span class="token punctuation">(</span>status<span class="token punctuation">,</span> response_headers<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>info<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -428,7 +503,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://waters321.com/posts/d87f7e0c.htmlindex.html">https://waters321.com/posts/d87f7e0c.html</a>
+                    <a href="https://waters321.com/posts/bbb68bef.htmlindex.html">https://waters321.com/posts/bbb68bef.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -639,13 +714,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/456fb9b8.html">
+                <a href="/posts/d87f7e0c.html">
                     <div class="card-image">
                         
                         
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/15.jpg" class="responsive-img" alt="oss+cdn">
+                        <img src="/images/loading.gif" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="test">
                         
-                        <span class="card-title">oss+cdn</span>
+                        <span class="card-title">test</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -656,7 +731,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-08
                         </span>
                         <span class="publish-author">
                             
@@ -676,13 +751,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/bbb68bef.html">
+                <a href="/posts/5f1c9ca.html">
                     <div class="card-image">
                         
                         
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/15.jpg" class="responsive-img" alt="主题备选">
+                        <img src="/images/loading.gif" data-original="/medias/featureimages/3.jpg" class="responsive-img" alt="blog相关">
                         
-                        <span class="card-title">主题备选</span>
+                        <span class="card-title">blog相关</span>
                     </div>
                 </a>
                 <div class="card-content article-content">

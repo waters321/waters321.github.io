@@ -6,7 +6,7 @@
   <link href="https://waters321.com/atom.xml" rel="self"/>
   
   <link href="https://waters321.com/"/>
-  <updated>2021-05-17T08:51:15.971Z</updated>
+  <updated>2021-05-17T09:01:16.257Z</updated>
   <id>https://waters321.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="https://waters321.com/posts/4a17b156.html"/>
     <id>https://waters321.com/posts/4a17b156.html</id>
-    <published>2021-05-17T08:51:15.971Z</published>
-    <updated>2021-05-17T08:51:15.971Z</updated>
+    <published>2021-05-17T09:01:16.257Z</published>
+    <updated>2021-05-17T09:01:16.257Z</updated>
     
     
       
@@ -38,12 +38,204 @@
   </entry>
   
   <entry>
+    <title>xxl-job本地开发环境调用</title>
+    <link href="https://waters321.com/posts/86401e8b.html"/>
+    <id>https://waters321.com/posts/86401e8b.html</id>
+    <published>2021-05-17T07:54:51.000Z</published>
+    <updated>2021-05-17T09:01:43.361Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>xxl-job添加traceId</title>
+    <link href="https://waters321.com/posts/5152b423.html"/>
+    <id>https://waters321.com/posts/5152b423.html</id>
+    <published>2021-05-17T07:53:47.000Z</published>
+    <updated>2021-05-17T09:01:43.365Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>oss+cdn</title>
+    <link href="https://waters321.com/posts/456fb9b8.html"/>
+    <id>https://waters321.com/posts/456fb9b8.html</id>
+    <published>2021-05-13T02:28:26.000Z</published>
+    <updated>2021-05-17T09:01:43.373Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;You don’t have permission to access the URL on this server.&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>test</title>
     <link href="https://waters321.com/posts/d87f7e0c.html"/>
     <id>https://waters321.com/posts/d87f7e0c.html</id>
     <published>2021-05-08T21:35:25.000Z</published>
-    <updated>2021-05-17T08:51:15.971Z</updated>
+    <updated>2021-05-17T09:01:16.257Z</updated>
     
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>主题备选</title>
+    <link href="https://waters321.com/posts/bbb68bef.html"/>
+    <id>https://waters321.com/posts/bbb68bef.html</id>
+    <published>2021-05-08T05:35:59.000Z</published>
+    <updated>2021-05-17T09:01:43.389Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>blog相关</title>
+    <link href="https://waters321.com/posts/5f1c9ca.html"/>
+    <id>https://waters321.com/posts/5f1c9ca.html</id>
+    <published>2021-05-08T05:35:45.000Z</published>
+    <updated>2021-05-17T09:01:43.393Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;adfasdf&lt;/p&gt;
+&lt;p&gt;44444413123998989812312312312313123&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hive</title>
+    <link href="https://waters321.com/posts/dc6dbbf8.html"/>
+    <id>https://waters321.com/posts/dc6dbbf8.html</id>
+    <published>2021-05-07T07:31:18.000Z</published>
+    <updated>2021-05-17T09:01:43.401Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;wget &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hadoop v3</title>
+    <link href="https://waters321.com/posts/150dfbc8.html"/>
+    <id>https://waters321.com/posts/150dfbc8.html</id>
+    <published>2021-05-07T03:37:36.000Z</published>
+    <updated>2021-05-17T09:01:43.417Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;wget &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>helm v2 -&gt; v3</title>
+    <link href="https://waters321.com/posts/9261e9ce.html"/>
+    <id>https://waters321.com/posts/9261e9ce.html</id>
+    <published>2021-04-30T05:41:24.000Z</published>
+    <updated>2021-05-17T09:01:43.417Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/148914920&quot;&gt;https://zhuanlan.zhihu.com/p/148914920&lt;/a&gt;&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ververica/ververica-platform</title>
+    <link href="https://waters321.com/posts/9bd49529.html"/>
+    <id>https://waters321.com/posts/9bd49529.html</id>
+    <published>2021-04-29T08:31:01.000Z</published>
+    <updated>2021-05-17T09:01:43.425Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;需要是 helm3 才行。&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
     
     
     
