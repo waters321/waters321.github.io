@@ -17,6 +17,19 @@
     
     
     <entry>
+      <title>mysql8.0秒加列</title>
+      <link href="posts/b4b9077c.html"/>
+      <url>posts/b4b9077c.html</url>
+      
+        <content type="html"><![CDATA[<p>alter table wxwork_single_chat_record ADD COLUMN <code>voice_duration</code> bigint NULL DEFAULT NULL COMMENT ‘语音时长’, algorithm=instant;</p><p><a href="https://segmentfault.com/a/1190000024426474">https://segmentfault.com/a/1190000024426474</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>xxl-job本地开发环境调用</title>
       <link href="posts/86401e8b.html"/>
       <url>posts/86401e8b.html</url>

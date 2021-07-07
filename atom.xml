@@ -6,7 +6,7 @@
   <link href="https://waters321.com/atom.xml" rel="self"/>
   
   <link href="https://waters321.com/"/>
-  <updated>2021-07-04T07:57:09.927Z</updated>
+  <updated>2021-07-07T01:20:06.592Z</updated>
   <id>https://waters321.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="https://waters321.com/posts/4a17b156.html"/>
     <id>https://waters321.com/posts/4a17b156.html</id>
-    <published>2021-07-04T07:57:09.927Z</published>
-    <updated>2021-07-04T07:57:09.927Z</updated>
+    <published>2021-07-07T01:20:06.592Z</published>
+    <updated>2021-07-07T01:20:06.592Z</updated>
     
     
       
@@ -38,11 +38,32 @@
   </entry>
   
   <entry>
+    <title>mysql8.0秒加列</title>
+    <link href="https://waters321.com/posts/b4b9077c.html"/>
+    <id>https://waters321.com/posts/b4b9077c.html</id>
+    <published>2021-07-06T12:05:38.000Z</published>
+    <updated>2021-07-07T01:20:36.056Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;alter table wxwork_single_chat_record ADD COLUMN &lt;code&gt;voice_duration&lt;/code&gt; bigint NULL DEFAULT NULL COMMENT ‘语音时长’,</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>xxl-job本地开发环境调用</title>
     <link href="https://waters321.com/posts/86401e8b.html"/>
     <id>https://waters321.com/posts/86401e8b.html</id>
     <published>2021-05-17T07:54:51.000Z</published>
-    <updated>2021-07-04T07:57:37.459Z</updated>
+    <updated>2021-07-07T01:20:36.068Z</updated>
     
     
       
@@ -63,7 +84,7 @@
     <link href="https://waters321.com/posts/5152b423.html"/>
     <id>https://waters321.com/posts/5152b423.html</id>
     <published>2021-05-17T07:53:47.000Z</published>
-    <updated>2021-07-04T07:57:37.463Z</updated>
+    <updated>2021-07-07T01:20:36.072Z</updated>
     
     
       
@@ -84,7 +105,7 @@
     <link href="https://waters321.com/posts/456fb9b8.html"/>
     <id>https://waters321.com/posts/456fb9b8.html</id>
     <published>2021-05-13T02:28:26.000Z</published>
-    <updated>2021-07-04T07:57:37.467Z</updated>
+    <updated>2021-07-07T01:20:36.080Z</updated>
     
     
       
@@ -105,7 +126,7 @@
     <link href="https://waters321.com/posts/d87f7e0c.html"/>
     <id>https://waters321.com/posts/d87f7e0c.html</id>
     <published>2021-05-08T21:35:25.000Z</published>
-    <updated>2021-07-04T07:57:09.927Z</updated>
+    <updated>2021-07-07T01:20:06.592Z</updated>
     
     
     
@@ -118,7 +139,7 @@
     <link href="https://waters321.com/posts/bbb68bef.html"/>
     <id>https://waters321.com/posts/bbb68bef.html</id>
     <published>2021-05-08T05:35:59.000Z</published>
-    <updated>2021-07-04T07:57:37.479Z</updated>
+    <updated>2021-07-07T01:20:36.100Z</updated>
     
     
       
@@ -139,7 +160,7 @@
     <link href="https://waters321.com/posts/5f1c9ca.html"/>
     <id>https://waters321.com/posts/5f1c9ca.html</id>
     <published>2021-05-08T05:35:45.000Z</published>
-    <updated>2021-07-04T07:57:37.491Z</updated>
+    <updated>2021-07-07T01:20:36.104Z</updated>
     
     
       
@@ -162,7 +183,7 @@
     <link href="https://waters321.com/posts/dc6dbbf8.html"/>
     <id>https://waters321.com/posts/dc6dbbf8.html</id>
     <published>2021-05-07T07:31:18.000Z</published>
-    <updated>2021-07-04T07:57:37.503Z</updated>
+    <updated>2021-07-07T01:20:36.120Z</updated>
     
     
       
@@ -183,7 +204,7 @@
     <link href="https://waters321.com/posts/150dfbc8.html"/>
     <id>https://waters321.com/posts/150dfbc8.html</id>
     <published>2021-05-07T03:37:36.000Z</published>
-    <updated>2021-07-04T07:57:37.515Z</updated>
+    <updated>2021-07-07T01:20:36.136Z</updated>
     
     
       
@@ -204,7 +225,7 @@
     <link href="https://waters321.com/posts/9261e9ce.html"/>
     <id>https://waters321.com/posts/9261e9ce.html</id>
     <published>2021-04-30T05:41:24.000Z</published>
-    <updated>2021-07-04T07:57:37.519Z</updated>
+    <updated>2021-07-07T01:20:36.140Z</updated>
     
     
       
@@ -225,7 +246,7 @@
     <link href="https://waters321.com/posts/9bd49529.html"/>
     <id>https://waters321.com/posts/9bd49529.html</id>
     <published>2021-04-29T08:31:01.000Z</published>
-    <updated>2021-07-04T07:57:37.527Z</updated>
+    <updated>2021-07-07T01:20:36.152Z</updated>
     
     
       
