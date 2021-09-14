@@ -656,7 +656,7 @@ zcat xx.production-s4.log-20210819.1.gz|grep -a "V1.0 2021-08-19 11:1"|grep requ
                             
                                 
 
-curl -XPOST udesk:xxxxxx@xxxxxx:9200/qw_cust_v1/qw_customer/_update_by_query -d '
+curl -XPOST xxxxx:xxxxxx@xxxxxx:9200/qw_cust_v1/qw_customer/_update_by_query -d '
 {
     "query": {
         "match": {
